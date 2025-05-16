@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Waste Awareness Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>E-Waste Awareness</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="ewaste.html">What is E-Waste?</a></li>
+          <li><a href="matters.html">Why It Matters</a></li>
+          <li><a href="dispose.html">How to Dispose</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <h2>Proper Disposal Methods</h2>
+    <p>
+      Disposing of electronic waste responsibly prevents environmental damage and recovers valuable resources. The best ways to dispose of e-waste include:
+    </p>
+    <ul>
+      <li>Using certified e-waste recycling centers</li>
+      <li>Participating in community collection events</li>
+      <li>Donating working electronics to charities or schools</li>
+      <li>Returning electronics to manufacturers or retailers for recycling</li>
+    </ul>
+
+    <h2>Health and Safety Protocols</h2>
+    <p>
+      E-waste contains hazardous materials like lead, mercury, and cadmium. Safe handling is essential to protect workers and the community:
+    </p>
+    <ul>
+      <li>Always wear gloves, masks, and protective eyewear when handling broken electronics</li>
+      <li>Never dismantle devices at home—this should be done at certified facilities</li>
+      <li>Keep e-waste away from children and food areas</li>
+      <li>Ensure recyclers follow environmental and health standards</li>
+    </ul>
+
+    <div class="gallery-grid">
+      <img src="images/ewaste17.jpg"  />
+      <img src="images/ewaste16.jpg"  />
+      <img src="images/ewaste15.jpg"  />
+      <img src="images/ewaste14.jpg" />
+      <img src="images/ewaste12.jpg" />
+      <img src="images/ewaste13.jpg" />
+    </div>
+	
+<p style="margin-bottom: 60px;">
+
+	</section>
+
+  <section class="video-section">
+    <h2>Watch: Safe E-Waste Disposal Practices</h2>
+    <video controls>
+  <source src="videos/video2.mp4" type="video/mp4"
+  <p style="margin-top: 10px; font-size: 0.9rem;">
+      YouTube – "Turning waste into valuable raw materials"
+</video>
+  </section>
+    
+	
+
+	<h2>Downloadable Checklist</h2>
+<p>
+  Management and Recycling of Electronic Waste
+</p>
+<a href="docs/waste-mgt.pdf" download class="cta-button">
+  ⬇ Download Safe Disposal Checklist (PDF)
+</a> 
+   
+	</p>
+
+<p style="margin-bottom: 60px;">
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 E-Waste Awareness Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>

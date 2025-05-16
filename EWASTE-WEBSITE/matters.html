@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Waste Awareness Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>E-Waste Awareness</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="ewaste.html">What is E-Waste?</a></li>
+          <li><a href="matters.html">Why It Matters</a></li>
+          <li><a href="dispose.html">How to Dispose</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-section">
+    <h2>The Urgency of Addressing E-Waste</h2>
+    <p>
+      E-waste is one of the fastest-growing waste streams globally. It poses significant risks to our environment and health, especially in developing countries where electronics are often dismantled by hand, exposing workers to toxic substances.
+    </p>
+    <p>
+      If improperly disposed of, e-waste can leak harmful materials like mercury and lead into the soil and groundwater. Additionally, it contributes to greenhouse gas emissions and resource depletion, as many of the metals in electronics are mined in environmentally destructive ways.
+    </p>
+    <p>
+      By tackling e-waste responsibly, we are not only protecting the environment but also reclaim valuable materials, reduce energy use, and promote sustainable development. Recycling just one million laptops saves the energy equivalent to the electricity used by 3,500 homes in a year.
+    </p>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Voque Impact of E-Waste</h2>
+    <p>Explore the real-world effects and efforts to combat e-waste across the globe.</p>
+    <div class="gallery-grid">
+      <img src="images/ewaste6.jpg"  />
+      <img src="images/ewaste9.jpg"  />
+      <img src="images/ewaste7.jpg"  />
+      <img src="images/ewaste8.jpg" />
+      <img src="images/ewaste10.jpg" />
+      <img src="images/ewaste11.jpg" />
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 E-Waste Awareness Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>

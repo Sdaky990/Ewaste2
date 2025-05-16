@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Waste Awareness Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>E-Waste Awareness</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="ewaste.html">What is E-Waste?</a></li>
+          <li><a href="matters.html">Why It Matters</a></li>
+          <li><a href="dispose.html">How to Dispose</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="gallery-section">
+    <h2>Understanding E-Waste</h2>
+	
+    <p>
+      Electronic waste or E-waste, refers to discarded electrical or electronic devices. It includes everything from old computers and mobile phones to household appliances and medical equipments.
+      As technology rapidly evolves, more devices are being thrown away, often improperly. The problem with e-waste is that it contains hazardous materials like lead, mercury, and cadmium, which can harm human health and the environment if not disposed of properly. At the same time,
+	  e-waste also holds valuable resources like copper, gold, and silver, making proper recycling essential.
+      
+	  Globally, e-waste is one of the fastest-growing waste streams, with millions of tonnes generated each year. Unfortunately, less than a quarter of it is formally recycled, leading to significant environmental and health risks.
+
+
+    </p>
+    <p>
+     This website is dedicated to educating the community about E-waste, its environmental and health risks, and proper disposal methods. The goal is to promote responsible recycling and encourage sustainable habits to reduce e-waste pollution.
+    </p>
+  </section>
+
+  <section class="slideshow-container">
+  <img class="slides" src="images/ewaste1.jpg" >
+  <img class="slides" src="images/ewaste2.jpg" >
+  <img class="slides" src="images/ewaste3.jpg" >
+  <img class="slides" src="images/ewaste5.jpg" >
+
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</section>
+
+  <section class="video-section">
+    <h2>Watch: The E-Waste Crisis</h2>
+    <video controls>
+  <source src="videos/video1.mp4" type="video/mp4">
+
+</video>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 E-Waste Awareness Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>
